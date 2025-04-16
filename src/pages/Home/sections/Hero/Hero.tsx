@@ -13,12 +13,12 @@ const Hero = () => {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    [theme.breakpoints.up('xs')]: {
-      paddingTop: "100px"
+    [theme.breakpoints.up("xs")]: {
+      paddingTop: "500px",
     },
-    [theme.breakpoints.up('md')]: {
-      paddingTop: "0px"
-    }
+    [theme.breakpoints.up("md")]: {
+      paddingTop: "0px",
+    },
   }));
 
   const StyledImage = styled("img")(() => ({
@@ -35,36 +35,38 @@ const Hero = () => {
             <Grid size={{ xs: 12, md: 5 }}>
               <Box position={"relative"}>
                 <Box position={"absolute"} width={"150%"} top={-100} right={0}>
-                <AnimatedBackground />
+                  <AnimatedBackground />
                 </Box>
                 <Box position={"relative"} textAlign={"center"}>
-                <StyledImage src={Avatar} />
+                  <StyledImage src={Avatar} />
                 </Box>
               </Box>
-             
             </Grid>
             <Grid size={{ xs: 12, md: 7 }}>
               <Typography
                 color="primary.contrastText"
                 textAlign={"center"}
-                variant="h1"
+                variant="h2"
                 pb={2}
               >
                 Miguel Baricelli
               </Typography>
               <Typography
-                textAlign={"center"}
+                textAlign="center"
                 variant="h2"
-                color="theme.custom.gradientBackground"
+                fontWeight="bold"
+                
                 sx={{
                   background: theme.custom.gradientBackground,
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
+                  WebkitTextStroke: "0.1px rgba(0, 0, 0, 0.7)", // stroke direto no texto
+                  pb: 3,
                 }}
-                pb={3}
               >
                 Software Developer
               </Typography>
+
               <Grid
                 container
                 display={"flex"}
@@ -76,7 +78,6 @@ const Hero = () => {
                   display={"flex"}
                   justifyContent={"center"}
                 >
-                  
                   <StyledButton onClick={() => console.log("foi")}>
                     <DownloadIcon />
                     <Typography>Download CV</Typography>
