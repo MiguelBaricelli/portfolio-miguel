@@ -1,5 +1,5 @@
 import { AppBar, MenuItem, Toolbar, styled } from "@mui/material";
-import theme from "../theme";
+import theme from "../../theme";
 
 
 const NavBar = () => {

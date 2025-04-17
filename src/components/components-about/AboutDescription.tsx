@@ -1,4 +1,4 @@
-import theme from "../theme";
+import theme from "../../theme";
 import { Box, Typography, useMediaQuery } from "@mui/material";
 import PersonIcon from "@mui/icons-material/Person";
 
