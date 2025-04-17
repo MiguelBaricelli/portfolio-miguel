@@ -1,6 +1,6 @@
-import theme from "../theme";
+import theme from "../../theme";
 import Paper from "@mui/material/Paper";
-import { Stack, styled } from "@mui/material";
+import { Box, Stack, styled } from "@mui/material";
 
 const Item = styled(Paper)(({}) => ({
   backgroundColor: theme.palette.primary.dark,
@@ -35,11 +35,12 @@ const icons = [
   { name: "HTML", class: "devicon-html5-plain" },
   { name: "CSS", class: "devicon-css3-plain" },
   { name: "JavaScript", class: "devicon-javascript-plain" },
-  { name: "React", class: "devicon-react-original" },
   { name: "C#", class: "devicon-csharp-plain" },
+  { name: "React", class: "devicon-react-original" },
   { name: ".NETCORE", class: "devicon-dotnetcore-plain" },
   { name: "MYSQL", class: "devicon-mysql-original" },
   { name: "AWS", class: "devicon-amazonwebservices-plain-wordmark" },
+  { name: "GIT", class: "devicon-git-plain" },
   { name: "GITHUB", class: "devicon-github-original" },
   { name: "MATERIALUI", class: "devicon-materialui-plain" },
   { name: "TAIL", class: "devicon-tailwindcss-original" },
@@ -47,16 +48,32 @@ const icons = [
 ];
 
 const BadgeSkills = () => {
-    return (
+  return (
+    <Stack
+      sx={{
+        position: "relative",
+        zIndex: 1,
+        backgroundColor: theme.palette.primary.main,
+        flexDirection: "column", // muda para empilhar vertical
+        gap: 2,
+        justifyContent: "center",
+        alignItems: "center",
+        padding: 4,
+      }}
+    >
+      
+      <Box>
+        <h2 style={{ color: "white", marginTop: 10, marginBottom: 20, fontSize: 46, fontFamily: "Montserrat, sans-serif", fontWeight: 200}}> Skills</h2>
+      </Box>
+  
+      {/* Ícones */}
       <Stack
         sx={{
-          backgroundColor: theme.palette.primary.main,
           flexDirection: "row",
           flexWrap: "wrap",
           gap: 4,
           justifyContent: "center",
           alignItems: "center",
-          padding: 2,
         }}
       >
         {icons.map((icon, index) => (
@@ -65,6 +82,8 @@ const BadgeSkills = () => {
           </Item>
         ))}
       </Stack>
-    );
-  };
+    </Stack>
+  );
+  
+};
 export default BadgeSkills;

@@ -3,8 +3,10 @@ import Avatar from "../../../../assets/images/Minha_foto_formal-removebg-preview
 import DownloadIcon from "@mui/icons-material/Download";
 import MailIcon from "@mui/icons-material/Mail";
 import theme from "../../../../theme";
-import StyledButton from "../../../../components/StyledButton";
-import { AnimatedBackground } from "../../../../components/AnimatedBackground";
+import StyledButton from "../../../../components/components-hero/StyledButton";
+import { AnimatedBackground } from "../../../../components/components-hero/AnimatedBackground";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Hero = () => {
   const StyledHero = styled("div")(() => ({
@@ -92,6 +94,32 @@ const Hero = () => {
                     <MailIcon />
                     <Typography>Contact</Typography>
                   </StyledButton>
+                  
+                  
+                </Grid>
+                <Grid
+                  size={{ xs: 12, md: 4 }}
+                  display={"flex"}
+                  justifyContent={"center"}
+                >
+                  <StyledButton onClick={() => console.log("foi2")}>
+                    <LinkedInIcon />
+                    <Typography>Linkedin</Typography>
+                  </StyledButton>
+                  
+                  
+                </Grid>
+                <Grid
+                  size={{ xs: 12, md: 4 }}
+                  display={"flex"}
+                  justifyContent={"center"}
+                >
+                  <StyledButton onClick={() => console.log("foi2")}>
+                    <GitHubIcon />
+                    <Typography>GitHub</Typography>
+                  </StyledButton>
+                  
+                  
                 </Grid>
               </Grid>
             </Grid>

@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import CardActionArea from "@mui/material/CardActionArea";
 import TextIncreaseIcon from "@mui/icons-material/TextIncrease";
 import ComputerIcon from "@mui/icons-material/Computer";
-import theme from "../theme";
+import theme from "../../theme";
 import { Grid } from "@mui/material";
 
 const cards = [
@@ -33,7 +33,7 @@ function SelectActionCard() {
 
   return (
     <Box
-      paddingTop={{ xs: "500px", sm: "40rem", md: "150px"}}
+      paddingTop={{ xs: "500px", sm: "40rem", md: "150px" }}
       paddingBottom={{ xs: "30px", md: "10px" }}
       sx={{
         color: "white",
@@ -66,6 +66,7 @@ function SelectActionCard() {
                   "&:hover": {
                     background: theme.custom.gradientBackground,
                     cursor: "inherit",
+                    flex: 1
                   },
                 }}
               >
