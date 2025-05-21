@@ -17,13 +17,14 @@ const cards = [
     Análista de sistemas formado pela Universidade Presbiteriana Mackenzie
     
     `,
-    complement: "Pós graduado em Arquitetura de software",
+    complement: "",
     icon: <TextIncreaseIcon fontSize="large" />,
   },
   {
     id: 2,
-    title: "Atuação",
-    description: "Desenvolvedor .Net, atuando como front-end e Back-end.",
+    title: "Especialização",
+    description: "Desenvolvedor de software",
+    complement: "Front-end / Back-end",
     icon: <ComputerIcon fontSize="large" />,
   },
 ];
