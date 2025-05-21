@@ -4,7 +4,11 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import foto from "../../assets/images/Minha_foto_formal-removebg-preview.png";
+import foto1 from "../../../src/assets/images/img-infinitybaritech-1.png"
+import foto2 from "../../../src/assets/images/img-infinitybaritech-2.png"
+import foto3 from "../../../src/assets/images/img-infinitybaritech-3.png"
+import foto4 from "../../../src/assets/images/img-landingPage-Inphone.png"
+import foto5 from "../../../src/assets/images/img-dentista-1.png"
 import theme from "../../theme";
 import ButtonProjetcs from "./ButtonProjects";
 
@@ -12,49 +16,41 @@ function CardsProjects() {
   const dataProjects = [
     {
       id: 1,
-      image: foto,
-      name: "Projeto 1",
-      description: "Descrição do projeto 1",
-      link: "https://github.com/MiguelBaricelli/.NetFirstWebApi",
+      image: foto1,
+      name: "Site InfinityBaritech",
+      description: "Site feito em Bootstrap para empresa de tecnologia. ",
+      link: "https://infinitybaritech.com.br/",
     },
     {
       id: 2,
-      image: foto,
-      name: "Projeto 2",
+      image: foto2,
+      name: "Blog Online",
       description:
-        "Descrição do projeto 2 Descrição do projeto 2 Descrição do projeto 2 Descrição do projeto 2 Descrição do projeto 2",
-      link: "https://github.com/MiguelBaricelli/.NetFirstWebApi",
+        "Site simples para compartilhar ideias, dicas e histórias, com posts organizados e design limpo.",
+      link: "https://blog.infinitybaritech.com.br/",
     },
     {
       id: 3,
-      image: foto,
-      name: "Projeto 3",
+      image: foto3,
+      name: "Cardápio Online",
       description:
-        "Descrição do projeto 2 Descrição do projeto 2 Descrição do projeto 2 Descrição do projeto 2 Descrição do projeto 2",
-      link: "https://github.com/MiguelBaricelli/.NetFirstWebApi",
+        "Site para restaurantes exibirem seus pratos, preços e promoções, com atualização fácil e visual atrativo. (ATUALMENTE EM ATUALIZAÇÃO E MIGRAÇÃO)",
+      link: "https://cardapio.infinitybaritech.com.br/",
     },
     {
       id: 4,
-      image: foto,
-      name: "Projeto 4",
+      image: foto4,
+      name: "Landing Page para App",
       description:
-        "Descrição do projeto 2 Descrição do projeto 2 Descrição do projeto 2 Descrição do projeto 2 Descrição do projeto 2",
-      link: "https://github.com/MiguelBaricelli/.NetFirstWebApi",
+        "Página única com destaque para adquirir o app, explicações e benefícios.",
+      link: "https://inphone.infinitybaritech.com.br/",
     },
-    {
+     {
       id: 4,
-      image: foto,
-      name: "Projeto 4",
+      image: foto5,
+      name: "Site para dentista credenciado",
       description:
-        "Descrição do projeto 2 Descrição do projeto 2 Descrição do projeto 2 Descrição do projeto 2 Descrição do projeto 2",
-      link: "https://github.com/MiguelBaricelli/.NetFirstWebApi",
-    },
-    {
-      id: 4,
-      image: foto,
-      name: "Projeto 4",
-      description:
-        "Descrição do projeto 2 Descrição do projeto 2 Descrição do projeto 2 Descrição do projeto 2 Descrição do projeto 2",
+        "Site profissional com informações de serviços, agendamento online e contato, transmitindo confiança e credibilidade.",
       link: "https://github.com/MiguelBaricelli/.NetFirstWebApi",
     },
     // você pode adicionar mais projetos aqui
@@ -77,10 +73,12 @@ function CardsProjects() {
       {/* Título acima dos cards */}
       <Grid size={12}>
         <Typography
+        
           variant="h3"
           component="h2"
           gutterBottom
-          fontFamily="Montserrat"
+          fontFamily="Montserrat, sans-serif"
+          fontWeight={200}
           color="white"
           sx={{ padding: "80px" }}
         >
@@ -132,7 +130,7 @@ function CardsProjects() {
             </CardContent>
             <CardActions sx={{ justifyContent: "center", mt: "30px" }}>
               <ButtonProjetcs href={project.link}>Ver Projeto</ButtonProjetcs>
-              <ButtonProjetcs href={project.link}>Ver no GitHub</ButtonProjetcs>
+             {/*  <ButtonProjetcs href={project.link}>Ver no GitHub</ButtonProjetcs> */}
             </CardActions>
           </Card>
         </Grid>

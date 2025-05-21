@@ -80,9 +80,10 @@ const Hero = () => {
                   display={"flex"}
                   justifyContent={"center"}
                 >
-                  <StyledButton onClick={() => console.log("foi")}>
+                  <StyledButton onClick={() => {}} >
                     <DownloadIcon />
-                    <Typography>Download CV</Typography>
+                    <Typography> Download CV</Typography>
+                    
                   </StyledButton>
                 </Grid>
                 <Grid

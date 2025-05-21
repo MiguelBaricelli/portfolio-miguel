@@ -47,18 +47,13 @@ const AboutDescription = () => {
           <span style={{ fontWeight: "bold" }}>
             Universidade Presbiteriana Mackenzie{" "}
           </span>{" "}
-          e apaixonado por tecnologia desde a infância.
+          e sou fascinado por tecnologia.
           <Typography mt={3}>
-            Tenho experiência com JavaScript, React, Bootstrap, C# ASP.NET Core,
-            Git/GitHub e SQL Server, com projetos que incluem landing pages,
-            sites institucionais, sistemas/API/ Microsserviços em ASP.NET Core e
-            Cloud AWS.
+          Tenho experiência em desenvolvimento Front-end com JavaScript, Bootstrap, Material UI e React. No Back-end, tenho maior afinidade com C#, ASP.NET Core e SQL Server. Também possuo conhecimentos em controle de versão com Git e GitHub. {"\n"} Já desenvolvi projetos como landing pages, sites institucionais e APIs RESTful com ASP.NET Core. Além disso, tenho familiaridade com serviços em nuvem, especialmente AWS e Azure.
           </Typography>
         </Typography>
         <Typography variant="body1" mt={3}>
-          Criei projetos em ASP.NET com Entity FrameWork, no padrão REST, junto
-          com token JWT, injeção de dependências, conexão com Banco de dados SQL
-          Server.
+         Atualmente, estudando ASP.NET com Entity Framework, seguindo o padrão RESTful, com implementação de autenticação via JWT, injeção de dependência e integração com banco de dados SQL Server. Além disso, aprofundando meus conhecimentos em padrões arquiteturais e design patterns para aprimorar a qualidade e escalabilidade das minhas aplicações.
         </Typography>
       </Box>
     </Box>
